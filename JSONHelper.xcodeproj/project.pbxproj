@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5F024AE11B4127C900EF50C4 /* IntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F024AE01B4127C900EF50C4 /* IntTests.swift */; };
 		5F024AE31B412BA900EF50C4 /* BoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F024AE21B412BA900EF50C4 /* BoolTests.swift */; };
+		5F1C55FC1C1AB25100EF50C4 /* JSONDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C55FB1C1AB25100EF50C4 /* JSONDataTypes.swift */; };
 		5F928D991C0D469F00EF50C4 /* JSONHelper-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F928D981C0D469F00EF50C4 /* JSONHelper-tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FAD076A1A70F2FC00C4D09E /* JSONHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAD07691A70F2FC00C4D09E /* JSONHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FAD07701A70F2FC00C4D09E /* JSONHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAD07641A70F2FC00C4D09E /* JSONHelper.framework */; };
@@ -63,6 +64,7 @@
 		5F024AE01B4127C900EF50C4 /* IntTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTests.swift; sourceTree = "<group>"; };
 		5F024AE21B412BA900EF50C4 /* BoolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolTests.swift; sourceTree = "<group>"; };
 		5F0E6F961ACDE06400D92679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F1C55FB1C1AB25100EF50C4 /* JSONDataTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDataTypes.swift; sourceTree = "<group>"; };
 		5F928D961C0D469F00EF50C4 /* JSONHelper_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONHelper_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F928D981C0D469F00EF50C4 /* JSONHelper-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSONHelper-tvOS.h"; sourceTree = "<group>"; };
 		5F928D9A1C0D469F00EF50C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,7 +72,6 @@
 		5FAD07681A70F2FC00C4D09E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FAD07691A70F2FC00C4D09E /* JSONHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONHelper.h; sourceTree = "<group>"; };
 		5FAD076F1A70F2FC00C4D09E /* JSONHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FAD07751A70F2FC00C4D09E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FAD07761A70F2FC00C4D09E /* JSONHelperTests.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = JSONHelperTests.swift; sourceTree = "<group>"; tabWidth = 2; };
 		5FAD07841A70F31300C4D09E /* JSONHelperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONHelperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FAD07871A70F31300C4D09E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -191,8 +192,8 @@
 		5FAD07661A70F2FC00C4D09E /* JSONHelper */ = {
 			isa = PBXGroup;
 			children = (
-				5FAD07671A70F2FC00C4D09E /* Supporting Files */,
 				5FAD07691A70F2FC00C4D09E /* JSONHelper.h */,
+				5F1C55FB1C1AB25100EF50C4 /* JSONDataTypes.swift */,
 				5FE42BD91B12DB3E00EF50C4 /* JSONHelper.swift */,
 				5FC1A4851B1CFBE500EF50C4 /* Extensions */,
 				5FAD07671A70F2FC00C4D09E /* Supporting Files */,
@@ -219,14 +220,6 @@
 				5F024AE21B412BA900EF50C4 /* BoolTests.swift */,
 			);
 			path = JSONHelperTests;
-			sourceTree = "<group>";
-		};
-		5FAD07741A70F2FC00C4D09E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5FAD07751A70F2FC00C4D09E /* Info.plist */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5FAD07851A70F31300C4D09E /* JSONHelperExample */ = {
@@ -423,7 +416,7 @@
 		5FAD075B1A70F2FC00C4D09E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Baris Sencan";
 				TargetAttributes = {
 					5F928D951C0D469F00EF50C4 = {
@@ -520,7 +513,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F928D9E1C0D46BE00EF50C4 /* JSONHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +526,7 @@
 				5FC1A4871B1CFFB500EF50C4 /* String.swift in Sources */,
 				5FE42BDA1B12DB3E00EF50C4 /* JSONHelper.swift in Sources */,
 				5FC1A4901B1D082500EF50C4 /* NSDate.swift in Sources */,
+				5F1C55FC1C1AB25100EF50C4 /* JSONDataTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,6 +678,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -799,6 +793,7 @@
 				);
 				INFOPLIST_FILE = "JSONHelperTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bsencan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -812,6 +807,7 @@
 				);
 				INFOPLIST_FILE = "JSONHelperTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bsencan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -826,6 +822,7 @@
 				);
 				INFOPLIST_FILE = "JSONHelperExample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bsencan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -836,6 +833,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "JSONHelperExample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bsencan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -854,6 +852,7 @@
 				);
 				INFOPLIST_FILE = "JSONHelperExampleTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bsencan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSONHelperExample.app/JSONHelperExample";
 			};
@@ -869,6 +868,7 @@
 				);
 				INFOPLIST_FILE = "JSONHelperExampleTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bsencan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSONHelperExample.app/JSONHelperExample";
 			};

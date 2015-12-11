@@ -30,10 +30,6 @@
 
 import Foundation
 
-/// A type of dictionary that only uses strings for keys and can contain any
-/// type of object as a value.
-public typealias JSONDictionary = [String: AnyObject]
-
 /// An object that can attempt to convert values of unknown types to its own type.
 public protocol Convertible {
 
@@ -57,14 +53,14 @@ public func convertToNilIfNull(value: Any?) -> Any? {
 public protocol Deserializable {
 
   /// TODOC
-  init(jsonDictionary: JSONDictionary)
+  init(jsonObject: JSONObject)
 }
 
 /// TODOC
 public protocol Serializable {
 
   /// TODOC
-  func toJSONDictionary() -> JSONDictionary
+  func toJSONValue() -> JSONValue
 }
 
 /// Operator for use in right hand side to left hand side conversion and deserialization.
@@ -110,7 +106,7 @@ public func <-- <C: Convertible, T>(inout lhs: [C], rhs: T?) -> [C] {
 }
 
 public func <-- <C: Convertible, T>(inout lhs: [String: C]?, rhs: T?) -> [String: C]? {
-  if let dictionary = rhs as? JSONDictionary {
+  if let dictionary = rhs as? JSONObject {
     lhs = [String: C]()
     for (key, value) in dictionary {
       var convertedValue: C?
@@ -136,12 +132,10 @@ public func <-- <C: Convertible, T>(inout lhs: [String: C], rhs: T?) -> [String:
 
 public func <-- <D: Deserializable, T>(inout lhs: D?, rhs: T?) -> D? {
   let cleanedValue = convertToNilIfNull(rhs)
-  if let jsonDictionary = cleanedValue as? JSONDictionary {
-    lhs = D(jsonDictionary: jsonDictionary)
-  } else if let
-    jsonString = cleanedValue as? String,
-    jsonData = jsonString.dataUsingEncoding(NSUTF8StringEncoding) {
-      lhs <-- NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions(0), error: nil)
+  if let jsonObject = cleanedValue as? JSONObject {
+    lhs = D(jsonObject: jsonObject)
+  } else if let string = cleanedValue as? String {
+    lhs <-- dataStringToObject(string)
   } else {
     lhs = nil
   }
@@ -167,10 +161,8 @@ public func <-- <D: Deserializable, T>(inout lhs: [D]?, rhs: T?) -> [D]? {
         lhs?.append(convertedElement)
       }
     }
-  } else if let
-    jsonString = convertToNilIfNull(rhs) as? String,
-    jsonData = jsonString.dataUsingEncoding(NSUTF8StringEncoding) {
-      lhs <-- NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions(0), error: nil)
+  } else if let string = convertToNilIfNull(rhs) as? String {
+    lhs <-- dataStringToObject(string)
   } else {
     lhs = nil
   }
@@ -206,3 +198,15 @@ public func --> <C: Convertible>(lhs: AnyObject?, inout rhs: [C]) -> [C] {
 }
 
 // TODO: Serialization
+
+
+// MARK: - Helper methods
+
+private func dataStringToObject(dataString: String) -> AnyObject? {
+  guard let data: NSData = dataString.dataUsingEncoding(NSUTF8StringEncoding) else { return nil }
+  var jsonObject: AnyObject?
+  do {
+    jsonObject = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(rawValue: 0))
+  } catch {}
+  return jsonObject
+}

@@ -34,7 +34,7 @@ extension NSURL: Convertible {
 
   public static func convertFromValue(value: Any?) -> Self? {
     if let stringValue = value as? String {
-      return self(string: stringValue)
+      return self.init(string: stringValue)
     }
     return nil
   }
