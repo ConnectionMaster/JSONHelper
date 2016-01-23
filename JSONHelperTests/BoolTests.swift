@@ -19,26 +19,26 @@ class BoolTests: XCTestCase {
   func testBoolToBoolConversion() {
     var value: Bool?
     value <-- (testBool as Any)
-    XCTAssertEqual(value!, testBool, "Bool to Bool conversion failed")
+    XCTAssertEqual(value, testBool, "Bool to Bool conversion failed")
   }
 
   func testIntToBoolConversion() {
     var value: Bool?
     for intAndResult in testIntsAndResults {
       value <-- (intAndResult.0 as Any)
-      XCTAssertEqual(value!, intAndResult.1, "Int to Bool conversion failed for value \(intAndResult.0)")
+      XCTAssertEqual(value, intAndResult.1, "Int to Bool conversion failed for value \(intAndResult.0)")
     }
   }
 
   func testStringToBoolConversion() {
     var value: Bool?
     value <-- (testString as Any)
-    XCTAssertEqual(value!, testBool, "String to Bool conversion failed")
+    XCTAssertEqual(value, testBool, "String to Bool conversion failed")
   }
 
   func testAlternativeStringToBoolConversion() {
     var value: Bool?
     value <-- (testStringAlternative as Any)
-    XCTAssertEqual(value!, testBool, "String to Bool conversion failed for alternative string representation")
+    XCTAssertEqual(value, testBool, "String to Bool conversion failed for alternative string representation")
   }
 }

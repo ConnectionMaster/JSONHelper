@@ -17,12 +17,12 @@ class StringTests: XCTestCase {
   func testStringToStringConversion() {
     var value: String?
     value <-- (testString as Any)
-    XCTAssertEqual(value!, testString, "String to String conversion failed")
+    XCTAssertEqual(value, testString, "String to String conversion failed")
   }
 
   func testIntToStringConversion() {
     var value: String?
     value <-- (testIntAndResult.0 as Any)
-    XCTAssertEqual(value!, testIntAndResult.1, "Int to String conversion failed")
+    XCTAssertEqual(value, testIntAndResult.1, "Int to String conversion failed")
   }
 }

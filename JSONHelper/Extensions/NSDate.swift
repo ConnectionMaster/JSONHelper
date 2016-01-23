@@ -1,8 +1,8 @@
 //
 //  NSDate.swift
 //
-//  Created by Baris Sencan on 06/01/2015.
-//  Copyright 2014 Baris Sencan
+//  Created by Barış Şencan on 06/01/2015.
+//  Copyright © 2015 Barış Şencan
 //
 //  Distributed under the permissive zlib license
 //  Get the latest version from here:
@@ -33,23 +33,23 @@ import Foundation
 extension NSDate: Convertible {
   private static let sharedFormatter = NSDateFormatter()
 
-  public static func convertFromValue(value: Any?) -> Self? {
-    if let value: Any = value {
-      if let unixTimeStamp = value as? NSTimeInterval {
-        return self.init(timeIntervalSince1970: unixTimeStamp)
-      } else if let
-        jsonDictionaryValueAndFormatTuple = value as? (AnyObject?, String),
-        stringValue = jsonDictionaryValueAndFormatTuple.0 as? String {
-          sharedFormatter.dateFormat = jsonDictionaryValueAndFormatTuple.1
-          if let convertedDate = sharedFormatter.dateFromString(stringValue) {
-            return self.init(timeIntervalSince1970: convertedDate.timeIntervalSince1970)
-          }
-      } else if let
-        jsonDictionaryValueAndConversionClosureTuple = value as? (AnyObject?, (value: AnyObject) -> NSDate?),
-        jsonDictionaryValue: AnyObject = jsonDictionaryValueAndConversionClosureTuple.0,
-        convertedDate = jsonDictionaryValueAndConversionClosureTuple.1(value: jsonDictionaryValue) {
+  public static func convertFromValue<T>(value: T?) -> Self? {
+    guard let value = value else { return nil }
+
+    if let unixTimeStamp = value as? NSTimeInterval {
+      return self.init(timeIntervalSince1970: unixTimeStamp)
+    } else if let
+      jsonDictionaryValueAndFormatTuple = value as? (AnyObject?, String),
+      stringValue = jsonDictionaryValueAndFormatTuple.0 as? String {
+        sharedFormatter.dateFormat = jsonDictionaryValueAndFormatTuple.1
+        if let convertedDate = sharedFormatter.dateFromString(stringValue) {
           return self.init(timeIntervalSince1970: convertedDate.timeIntervalSince1970)
-      }
+        }
+    } else if let
+      jsonDictionaryValueAndConversionClosureTuple = value as? (AnyObject?, (value: AnyObject) -> NSDate?),
+      jsonDictionaryValue: AnyObject = jsonDictionaryValueAndConversionClosureTuple.0,
+      convertedDate = jsonDictionaryValueAndConversionClosureTuple.1(value: jsonDictionaryValue) {
+        return self.init(timeIntervalSince1970: convertedDate.timeIntervalSince1970)
     }
     return nil
   }

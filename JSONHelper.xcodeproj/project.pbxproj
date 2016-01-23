@@ -9,7 +9,26 @@
 /* Begin PBXBuildFile section */
 		5F024AE11B4127C900EF50C4 /* IntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F024AE01B4127C900EF50C4 /* IntTests.swift */; };
 		5F024AE31B412BA900EF50C4 /* BoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F024AE21B412BA900EF50C4 /* BoolTests.swift */; };
+		5F133DA21C3840BB00EF50C4 /* JSONAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F133DA11C3840BB00EF50C4 /* JSONAPI.swift */; };
+		5F133DA31C3840C800EF50C4 /* JSONAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F133DA11C3840BB00EF50C4 /* JSONAPI.swift */; };
+		5F133DA41C3840CA00EF50C4 /* JSONAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F133DA11C3840BB00EF50C4 /* JSONAPI.swift */; };
 		5F1C55FC1C1AB25100EF50C4 /* JSONDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C55FB1C1AB25100EF50C4 /* JSONDataTypes.swift */; };
+		5F31FF561C5339B900EF50C4 /* NSDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF551C5339B900EF50C4 /* NSDateTests.swift */; };
+		5F31FF581C5339CE00EF50C4 /* NSURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF571C5339CE00EF50C4 /* NSURLTests.swift */; };
+		5F31FF5C1C533AD400EF50C4 /* Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF5B1C533AD400EF50C4 /* Conversion.swift */; };
+		5F31FF5E1C533AE000EF50C4 /* Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF5D1C533AE000EF50C4 /* Mapping.swift */; };
+		5F31FF601C533E9900EF50C4 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF5F1C533E9900EF50C4 /* Color.swift */; };
+		5F31FF611C533E9900EF50C4 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF5F1C533E9900EF50C4 /* Color.swift */; };
+		5F31FF621C533E9900EF50C4 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF5F1C533E9900EF50C4 /* Color.swift */; };
+		5F31FF631C533E9D00EF50C4 /* Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF5D1C533AE000EF50C4 /* Mapping.swift */; };
+		5F31FF641C533E9D00EF50C4 /* Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF5D1C533AE000EF50C4 /* Mapping.swift */; };
+		5F31FF651C533EA000EF50C4 /* Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF5B1C533AD400EF50C4 /* Conversion.swift */; };
+		5F31FF661C533EA100EF50C4 /* Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF5B1C533AD400EF50C4 /* Conversion.swift */; };
+		5F31FF671C533EA400EF50C4 /* JSONDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C55FB1C1AB25100EF50C4 /* JSONDataTypes.swift */; };
+		5F31FF681C533EA500EF50C4 /* JSONDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C55FB1C1AB25100EF50C4 /* JSONDataTypes.swift */; };
+		5F31FF691C533EAA00EF50C4 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1A4861B1CFFB500EF50C4 /* String.swift */; };
+		5F31FF6A1C533EAD00EF50C4 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1A4881B1D024500EF50C4 /* Int.swift */; };
+		5F31FF6C1C533F1600EF50C4 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF6B1C533F1600EF50C4 /* ColorTests.swift */; };
 		5F928D991C0D469F00EF50C4 /* JSONHelper-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F928D981C0D469F00EF50C4 /* JSONHelper-tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FAD076A1A70F2FC00C4D09E /* JSONHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAD07691A70F2FC00C4D09E /* JSONHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FAD07701A70F2FC00C4D09E /* JSONHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAD07641A70F2FC00C4D09E /* JSONHelper.framework */; };
@@ -31,8 +50,6 @@
 		5FC1A4921B1D082D00EF50C4 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1A48F1B1D082500EF50C4 /* NSDate.swift */; };
 		5FC1A4941B1D1D8B00EF50C4 /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1A4931B1D1D8B00EF50C4 /* NSURL.swift */; };
 		5FC1A4951B1D1D8B00EF50C4 /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1A4931B1D1D8B00EF50C4 /* NSURL.swift */; };
-		5FE42BDA1B12DB3E00EF50C4 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE42BD91B12DB3E00EF50C4 /* JSONHelper.swift */; };
-		5FE42BDB1B12DB3E00EF50C4 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE42BD91B12DB3E00EF50C4 /* JSONHelper.swift */; };
 		D76C52051ACD46B100B49735 /* JSONHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAD07691A70F2FC00C4D09E /* JSONHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -64,8 +81,15 @@
 		5F024AE01B4127C900EF50C4 /* IntTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTests.swift; sourceTree = "<group>"; };
 		5F024AE21B412BA900EF50C4 /* BoolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolTests.swift; sourceTree = "<group>"; };
 		5F0E6F961ACDE06400D92679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F133DA11C3840BB00EF50C4 /* JSONAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONAPI.swift; path = Support/JSONAPI.swift; sourceTree = "<group>"; };
 		5F1C55FB1C1AB25100EF50C4 /* JSONDataTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDataTypes.swift; sourceTree = "<group>"; };
-		5F928D961C0D469F00EF50C4 /* JSONHelper_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONHelper_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F31FF551C5339B900EF50C4 /* NSDateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateTests.swift; sourceTree = "<group>"; };
+		5F31FF571C5339CE00EF50C4 /* NSURLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLTests.swift; sourceTree = "<group>"; };
+		5F31FF5B1C533AD400EF50C4 /* Conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversion.swift; sourceTree = "<group>"; };
+		5F31FF5D1C533AE000EF50C4 /* Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapping.swift; sourceTree = "<group>"; };
+		5F31FF5F1C533E9900EF50C4 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Color.swift; path = Extensions/Color.swift; sourceTree = "<group>"; };
+		5F31FF6B1C533F1600EF50C4 /* ColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
+		5F928D961C0D469F00EF50C4 /* JSONHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F928D981C0D469F00EF50C4 /* JSONHelper-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSONHelper-tvOS.h"; sourceTree = "<group>"; };
 		5F928D9A1C0D469F00EF50C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FAD07641A70F2FC00C4D09E /* JSONHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +113,6 @@
 		5FC1A48D1B1D057B00EF50C4 /* Bool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bool.swift; path = Extensions/Bool.swift; sourceTree = "<group>"; };
 		5FC1A48F1B1D082500EF50C4 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSDate.swift; path = Extensions/NSDate.swift; sourceTree = "<group>"; };
 		5FC1A4931B1D1D8B00EF50C4 /* NSURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSURL.swift; path = Extensions/NSURL.swift; sourceTree = "<group>"; };
-		5FE42BD91B12DB3E00EF50C4 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 		D76C520A1ACD46B100B49735 /* JSONHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -156,6 +179,14 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		5F133DA01C3840A200EF50C4 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				5F133DA11C3840BB00EF50C4 /* JSONAPI.swift */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
 		5F928D9F1C0D478800EF50C4 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,9 +200,9 @@
 			isa = PBXGroup;
 			children = (
 				5FAD07661A70F2FC00C4D09E /* JSONHelper */,
+				5FAD07731A70F2FC00C4D09E /* JSONHelperTests */,
 				5FAD07851A70F31300C4D09E /* JSONHelperExample */,
 				5FAD079B1A70F31300C4D09E /* JSONHelperExampleTests */,
-				5FAD07731A70F2FC00C4D09E /* JSONHelperTests */,
 				5FAD07651A70F2FC00C4D09E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -184,7 +215,7 @@
 				5FAD07841A70F31300C4D09E /* JSONHelperExample.app */,
 				5FAD07981A70F31300C4D09E /* JSONHelperExampleTests.xctest */,
 				D76C520A1ACD46B100B49735 /* JSONHelper.framework */,
-				5F928D961C0D469F00EF50C4 /* JSONHelper_tvOS.framework */,
+				5F928D961C0D469F00EF50C4 /* JSONHelper.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,8 +225,10 @@
 			children = (
 				5FAD07691A70F2FC00C4D09E /* JSONHelper.h */,
 				5F1C55FB1C1AB25100EF50C4 /* JSONDataTypes.swift */,
-				5FE42BD91B12DB3E00EF50C4 /* JSONHelper.swift */,
+				5F31FF5B1C533AD400EF50C4 /* Conversion.swift */,
+				5F31FF5D1C533AE000EF50C4 /* Mapping.swift */,
 				5FC1A4851B1CFBE500EF50C4 /* Extensions */,
+				5F133DA01C3840A200EF50C4 /* Support */,
 				5FAD07671A70F2FC00C4D09E /* Supporting Files */,
 			);
 			path = JSONHelper;
@@ -215,9 +248,12 @@
 			isa = PBXGroup;
 			children = (
 				5FAD07761A70F2FC00C4D09E /* JSONHelperTests.swift */,
-				5FB9D4DF1B38007C00EF50C4 /* StringTests.swift */,
-				5F024AE01B4127C900EF50C4 /* IntTests.swift */,
 				5F024AE21B412BA900EF50C4 /* BoolTests.swift */,
+				5F31FF6B1C533F1600EF50C4 /* ColorTests.swift */,
+				5F024AE01B4127C900EF50C4 /* IntTests.swift */,
+				5F31FF551C5339B900EF50C4 /* NSDateTests.swift */,
+				5F31FF571C5339CE00EF50C4 /* NSURLTests.swift */,
+				5FB9D4DF1B38007C00EF50C4 /* StringTests.swift */,
 			);
 			path = JSONHelperTests;
 			sourceTree = "<group>";
@@ -263,11 +299,12 @@
 		5FC1A4851B1CFBE500EF50C4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5FC1A4861B1CFFB500EF50C4 /* String.swift */,
-				5FC1A4881B1D024500EF50C4 /* Int.swift */,
 				5FC1A48D1B1D057B00EF50C4 /* Bool.swift */,
+				5F31FF5F1C533E9900EF50C4 /* Color.swift */,
+				5FC1A4881B1D024500EF50C4 /* Int.swift */,
 				5FC1A48F1B1D082500EF50C4 /* NSDate.swift */,
 				5FC1A4931B1D1D8B00EF50C4 /* NSURL.swift */,
+				5FC1A4861B1CFFB500EF50C4 /* String.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -302,9 +339,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5F928D951C0D469F00EF50C4 /* JSONHelper_tvOS */ = {
+		5F928D951C0D469F00EF50C4 /* JSONHelper-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F928D9B1C0D469F00EF50C4 /* Build configuration list for PBXNativeTarget "JSONHelper_tvOS" */;
+			buildConfigurationList = 5F928D9B1C0D469F00EF50C4 /* Build configuration list for PBXNativeTarget "JSONHelper-tvOS" */;
 			buildPhases = (
 				5F928D911C0D469F00EF50C4 /* Sources */,
 				5F928D921C0D469F00EF50C4 /* Frameworks */,
@@ -315,14 +352,14 @@
 			);
 			dependencies = (
 			);
-			name = JSONHelper_tvOS;
+			name = "JSONHelper-tvOS";
 			productName = "JSONHelper-tvOS";
-			productReference = 5F928D961C0D469F00EF50C4 /* JSONHelper_tvOS.framework */;
+			productReference = 5F928D961C0D469F00EF50C4 /* JSONHelper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5FAD07631A70F2FC00C4D09E /* JSONHelper */ = {
+		5FAD07631A70F2FC00C4D09E /* JSONHelper-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5FAD077A1A70F2FC00C4D09E /* Build configuration list for PBXNativeTarget "JSONHelper" */;
+			buildConfigurationList = 5FAD077A1A70F2FC00C4D09E /* Build configuration list for PBXNativeTarget "JSONHelper-iOS" */;
 			buildPhases = (
 				5FAD075F1A70F2FC00C4D09E /* Sources */,
 				5FAD07601A70F2FC00C4D09E /* Frameworks */,
@@ -333,7 +370,7 @@
 			);
 			dependencies = (
 			);
-			name = JSONHelper;
+			name = "JSONHelper-iOS";
 			productName = JSONHelper;
 			productReference = 5FAD07641A70F2FC00C4D09E /* JSONHelper.framework */;
 			productType = "com.apple.product-type.framework";
@@ -392,9 +429,9 @@
 			productReference = 5FAD07981A70F31300C4D09E /* JSONHelperExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D76C52001ACD46B100B49735 /* JSONHelper_Mac */ = {
+		D76C52001ACD46B100B49735 /* JSONHelper-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D76C52071ACD46B100B49735 /* Build configuration list for PBXNativeTarget "JSONHelper_Mac" */;
+			buildConfigurationList = D76C52071ACD46B100B49735 /* Build configuration list for PBXNativeTarget "JSONHelper-Mac" */;
 			buildPhases = (
 				D76C52011ACD46B100B49735 /* Sources */,
 				D76C52031ACD46B100B49735 /* Frameworks */,
@@ -405,7 +442,7 @@
 			);
 			dependencies = (
 			);
-			name = JSONHelper_Mac;
+			name = "JSONHelper-Mac";
 			productName = JSONHelper;
 			productReference = D76C520A1ACD46B100B49735 /* JSONHelper.framework */;
 			productType = "com.apple.product-type.framework";
@@ -450,9 +487,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5FAD07631A70F2FC00C4D09E /* JSONHelper */,
-				D76C52001ACD46B100B49735 /* JSONHelper_Mac */,
-				5F928D951C0D469F00EF50C4 /* JSONHelper_tvOS */,
+				5FAD07631A70F2FC00C4D09E /* JSONHelper-iOS */,
+				D76C52001ACD46B100B49735 /* JSONHelper-Mac */,
+				5F928D951C0D469F00EF50C4 /* JSONHelper-tvOS */,
 				5FAD076E1A70F2FC00C4D09E /* JSONHelperTests */,
 				5FAD07831A70F31300C4D09E /* JSONHelperExample */,
 				5FAD07971A70F31300C4D09E /* JSONHelperExampleTests */,
@@ -513,6 +550,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F31FF691C533EAA00EF50C4 /* String.swift in Sources */,
+				5F31FF641C533E9D00EF50C4 /* Mapping.swift in Sources */,
+				5F31FF681C533EA500EF50C4 /* JSONDataTypes.swift in Sources */,
+				5F31FF6A1C533EAD00EF50C4 /* Int.swift in Sources */,
+				5F31FF661C533EA100EF50C4 /* Conversion.swift in Sources */,
+				5F133DA41C3840CA00EF50C4 /* JSONAPI.swift in Sources */,
+				5F31FF621C533E9900EF50C4 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,9 +567,12 @@
 				5FC1A4941B1D1D8B00EF50C4 /* NSURL.swift in Sources */,
 				5FC1A4891B1D024500EF50C4 /* Int.swift in Sources */,
 				5FC1A48E1B1D057B00EF50C4 /* Bool.swift in Sources */,
+				5F31FF601C533E9900EF50C4 /* Color.swift in Sources */,
 				5FC1A4871B1CFFB500EF50C4 /* String.swift in Sources */,
-				5FE42BDA1B12DB3E00EF50C4 /* JSONHelper.swift in Sources */,
+				5F31FF5E1C533AE000EF50C4 /* Mapping.swift in Sources */,
+				5F133DA21C3840BB00EF50C4 /* JSONAPI.swift in Sources */,
 				5FC1A4901B1D082500EF50C4 /* NSDate.swift in Sources */,
+				5F31FF5C1C533AD400EF50C4 /* Conversion.swift in Sources */,
 				5F1C55FC1C1AB25100EF50C4 /* JSONDataTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,8 +583,11 @@
 			files = (
 				5F024AE11B4127C900EF50C4 /* IntTests.swift in Sources */,
 				5F024AE31B412BA900EF50C4 /* BoolTests.swift in Sources */,
+				5F31FF581C5339CE00EF50C4 /* NSURLTests.swift in Sources */,
 				5FB9D4E01B38007C00EF50C4 /* StringTests.swift in Sources */,
 				5FAD07771A70F2FC00C4D09E /* JSONHelperTests.swift in Sources */,
+				5F31FF6C1C533F1600EF50C4 /* ColorTests.swift in Sources */,
+				5F31FF561C5339B900EF50C4 /* NSDateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,10 +613,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FC1A4951B1D1D8B00EF50C4 /* NSURL.swift in Sources */,
+				5F31FF671C533EA400EF50C4 /* JSONDataTypes.swift in Sources */,
 				5FC1A48C1B1D036700EF50C4 /* Int.swift in Sources */,
+				5F31FF611C533E9900EF50C4 /* Color.swift in Sources */,
+				5F31FF651C533EA000EF50C4 /* Conversion.swift in Sources */,
 				5FC1A4911B1D082B00EF50C4 /* Bool.swift in Sources */,
+				5F31FF631C533E9D00EF50C4 /* Mapping.swift in Sources */,
+				5F133DA31C3840C800EF50C4 /* JSONAPI.swift in Sources */,
 				5FC1A48B1B1D036400EF50C4 /* String.swift in Sources */,
-				5FE42BDB1B12DB3E00EF50C4 /* JSONHelper.swift in Sources */,
 				5FC1A4921B1D082D00EF50C4 /* NSDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,12 +630,12 @@
 /* Begin PBXTargetDependency section */
 		5F0E6F951ACDD94E00D92679 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5FAD07631A70F2FC00C4D09E /* JSONHelper */;
+			target = 5FAD07631A70F2FC00C4D09E /* JSONHelper-iOS */;
 			targetProxy = 5F0E6F941ACDD94E00D92679 /* PBXContainerItemProxy */;
 		};
 		5FAD07721A70F2FC00C4D09E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5FAD07631A70F2FC00C4D09E /* JSONHelper */;
+			target = 5FAD07631A70F2FC00C4D09E /* JSONHelper-iOS */;
 			targetProxy = 5FAD07711A70F2FC00C4D09E /* PBXContainerItemProxy */;
 		};
 		5FAD079A1A70F31300C4D09E /* PBXTargetDependency */ = {
@@ -623,11 +677,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "JSONHelper-tvOS/Info.plist";
+				INFOPLIST_FILE = "JSONHelper/Supporting Files/tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsencan.JSONHelper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = JSONHelper;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -645,11 +699,11 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "JSONHelper-tvOS/Info.plist";
+				INFOPLIST_FILE = "JSONHelper/Supporting Files/tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsencan.JSONHelper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = JSONHelper;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -756,7 +810,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsencan.JSONHelper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = JSONHelper;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -775,7 +829,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsencan.JSONHelper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = JSONHelper;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -918,7 +972,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5F928D9B1C0D469F00EF50C4 /* Build configuration list for PBXNativeTarget "JSONHelper_tvOS" */ = {
+		5F928D9B1C0D469F00EF50C4 /* Build configuration list for PBXNativeTarget "JSONHelper-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F928D9C1C0D469F00EF50C4 /* Debug */,
@@ -936,7 +990,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5FAD077A1A70F2FC00C4D09E /* Build configuration list for PBXNativeTarget "JSONHelper" */ = {
+		5FAD077A1A70F2FC00C4D09E /* Build configuration list for PBXNativeTarget "JSONHelper-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FAD077B1A70F2FC00C4D09E /* Debug */,
@@ -972,7 +1026,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D76C52071ACD46B100B49735 /* Build configuration list for PBXNativeTarget "JSONHelper_Mac" */ = {
+		D76C52071ACD46B100B49735 /* Build configuration list for PBXNativeTarget "JSONHelper-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D76C52081ACD46B100B49735 /* Debug */,

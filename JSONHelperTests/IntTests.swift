@@ -17,12 +17,12 @@ class IntTests: XCTestCase {
   func testIntToIntConversion() {
     var value: Int?
     value <-- (testInt as Any)
-    XCTAssertEqual(value!, testInt, "Int to Int conversion failed")
+    XCTAssertEqual(value, testInt, "Int to Int conversion failed")
   }
 
   func testStringToIntConversion() {
     var value: Int?
     value <-- (testString as Any)
-    XCTAssertEqual(value!, testInt, "String to Int conversion failed")
+    XCTAssertEqual(value, testInt, "String to Int conversion failed")
   }
 }

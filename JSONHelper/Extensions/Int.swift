@@ -1,8 +1,8 @@
 //
 //  Int.swift
 //
-//  Created by Baris Sencan on 06/01/2015.
-//  Copyright 2014 Baris Sencan
+//  Created by Barış Şencan on 06/01/2015.
+//  Copyright © 2015 Barış Şencan
 //
 //  Distributed under the permissive zlib license
 //  Get the latest version from here:
@@ -32,13 +32,13 @@ import Foundation
 
 extension Int: Convertible {
 
-  public static func convertFromValue(value: Any?) -> Int? {
-    if let value: Any = value {
-      if let intValue = value as? Int {
-        return intValue
-      } else if let stringValue = value as? String {
-        return Int(stringValue)
-      }
+  public static func convertFromValue<T>(value: T?) -> Int? {
+    guard let value = value else { return nil }
+
+    if let intValue = value as? Int {
+      return intValue
+    } else if let stringValue = value as? String {
+      return Int(stringValue)
     }
     return nil
   }

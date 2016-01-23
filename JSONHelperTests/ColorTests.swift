@@ -9,7 +9,7 @@
 import XCTest
 import JSONHelper
 
-#if os(iOS)
+#if os(iOS) || os(tvOS)
 
 import UIKit
 
@@ -23,12 +23,12 @@ class ColorTests: XCTestCase {
   let testStringAndResult = ("#ffffff", (r: CGFloat(1), g: CGFloat(1), b: CGFloat(1), a: CGFloat(1)))
 
   func testStringToColorConversion() {
-    #if os(iOS)
+    #if os(iOS) || os(tvOS)
       var value: UIColor?
     #else
       var value: NSColor?
     #endif
-    value <-- testStringAndResult.0
+    value <-- (testStringAndResult.0 as Any)
     var r: CGFloat = 0
     var g: CGFloat = 0
     var b: CGFloat = 0

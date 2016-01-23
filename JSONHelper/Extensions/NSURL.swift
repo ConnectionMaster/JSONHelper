@@ -1,8 +1,8 @@
 //
 //  NSURL.swift
 //
-//  Created by Baris Sencan on 06/01/2015.
-//  Copyright 2014 Baris Sencan
+//  Created by Barış Şencan on 06/01/2015.
+//  Copyright © 2015 Barış Şencan
 //
 //  Distributed under the permissive zlib license
 //  Get the latest version from here:
@@ -32,7 +32,7 @@ import Foundation
 
 extension NSURL: Convertible {
 
-  public static func convertFromValue(value: Any?) -> Self? {
+  public static func convertFromValue<T>(value: T?) -> Self? {
     if let stringValue = value as? String {
       return self.init(string: stringValue)
     }

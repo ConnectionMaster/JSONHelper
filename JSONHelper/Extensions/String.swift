@@ -1,8 +1,8 @@
 //
 //  String.swift
 //
-//  Created by Baris Sencan on 06/01/2015.
-//  Copyright 2014 Baris Sencan
+//  Created by Barış Şencan on 06/01/2015.
+//  Copyright © 2015 Barış Şencan
 //
 //  Distributed under the permissive zlib license
 //  Get the latest version from here:
@@ -32,13 +32,13 @@ import Foundation
 
 extension String: Convertible {
 
-  public static func convertFromValue(value: Any?) -> String? {
-    if let value: Any = value {
-      if let stringValue = value as? String {
-        return stringValue
-      } else if let intValue = value as? Int {
-        return "\(intValue)"
-      }
+  public static func convertFromValue<T>(value: T?) -> String? {
+    guard let value = value else { return nil }
+
+    if let stringValue = value as? String {
+      return stringValue
+    } else if let intValue = value as? Int {
+      return "\(intValue)"
     }
     return nil
   }

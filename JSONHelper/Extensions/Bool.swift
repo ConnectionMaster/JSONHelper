@@ -1,8 +1,8 @@
 //
 //  Bool.swift
 //
-//  Created by Baris Sencan on 06/01/2015.
-//  Copyright 2014 Baris Sencan
+//  Created by Barış Şencan on 06/01/2015.
+//  Copyright © 2015 Barış Şencan
 //
 //  Distributed under the permissive zlib license
 //  Get the latest version from here:
@@ -32,21 +32,21 @@ import Foundation
 
 extension Bool: Convertible {
 
-  public static func convertFromValue(value: Any?) -> Bool? {
-    if let value: Any = value {
-      if let boolValue = value as? Bool {
-        return boolValue
-      } else if let intValue = value as? Int {
-        return intValue > 0
-      } else if let stringValue = value as? String {
-        switch stringValue.lowercaseString {
-        case "true", "t":
-          return true
-        case "false", "f":
-          return false
-        default:
-          return nil
-        }
+  public static func convertFromValue<T>(value: T?) -> Bool? {
+    guard let value = value else { return nil }
+
+    if let boolValue = value as? Bool {
+      return boolValue
+    } else if let intValue = value as? Int {
+      return intValue > 0
+    } else if let stringValue = value as? String {
+      switch stringValue.lowercaseString {
+      case "true", "t", "yes", "y":
+        return true
+      case "false", "f", "no", "n":
+        return false
+      default:
+        return nil
       }
     }
     return nil
