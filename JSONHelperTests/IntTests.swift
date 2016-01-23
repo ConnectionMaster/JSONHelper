@@ -12,12 +12,33 @@ import JSONHelper
 
 class IntTests: XCTestCase {
   let testInt = 1
+  let testFloat = Float(1)
+  let testDouble = Double(1)
+  let testNSDecimalNumber = NSDecimalNumber(integer: 1)
   let testString = "1"
 
   func testIntToIntConversion() {
     var value: Int?
     value <-- (testInt as Any)
     XCTAssertEqual(value, testInt, "Int to Int conversion failed")
+  }
+
+  func testFloatToIntConversion() {
+    var value: Int?
+    value <-- (testFloat as Any)
+    XCTAssertEqual(value, testInt, "Float to Int conversion failed")
+  }
+
+  func testDoubleToIntConversion() {
+    var value: Int?
+    value <-- (testDouble as Any)
+    XCTAssertEqual(value, testInt, "Double to Int conversion failed")
+  }
+
+  func testNSDecimalNumberToIntConversion() {
+    var value: Int?
+    value <-- (testNSDecimalNumber as Any)
+    XCTAssertEqual(value, testInt, "NSDecimalNumber to Int conversion failed")
   }
 
   func testStringToIntConversion() {

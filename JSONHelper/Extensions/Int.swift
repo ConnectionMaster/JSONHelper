@@ -39,6 +39,10 @@ extension Int: Convertible {
       return intValue
     } else if let stringValue = value as? String {
       return Int(stringValue)
+    } else if let floatValue = value as? Float {
+      return Int(floatValue)
+    } else if let doubleValue = value as? Double {
+      return Int(doubleValue)
     }
     return nil
   }
