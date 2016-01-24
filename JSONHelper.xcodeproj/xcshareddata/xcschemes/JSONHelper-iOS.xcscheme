@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5FAD07631A70F2FC00C4D09E"
-               BuildableName = "JSONHelper-iOS.framework"
+               BuildableName = "JSONHelper.framework"
                BlueprintName = "JSONHelper-iOS"
                ReferencedContainer = "container:JSONHelper.xcodeproj">
             </BuildableReference>
@@ -58,7 +58,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5FAD07631A70F2FC00C4D09E"
-            BuildableName = "JSONHelper-iOS.framework"
+            BuildableName = "JSONHelper.framework"
             BlueprintName = "JSONHelper-iOS"
             ReferencedContainer = "container:JSONHelper.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5FAD07631A70F2FC00C4D09E"
-            BuildableName = "JSONHelper-iOS.framework"
+            BuildableName = "JSONHelper.framework"
             BlueprintName = "JSONHelper-iOS"
             ReferencedContainer = "container:JSONHelper.xcodeproj">
          </BuildableReference>
@@ -98,7 +98,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5FAD07631A70F2FC00C4D09E"
-            BuildableName = "JSONHelper-iOS.framework"
+            BuildableName = "JSONHelper.framework"
             BlueprintName = "JSONHelper-iOS"
             ReferencedContainer = "container:JSONHelper.xcodeproj">
          </BuildableReference>

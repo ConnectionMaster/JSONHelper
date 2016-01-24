@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5F928D951C0D469F00EF50C4"
-               BuildableName = "JSONHelper-tvOS.framework"
+               BuildableName = "JSONHelper.framework"
                BlueprintName = "JSONHelper-tvOS"
                ReferencedContainer = "container:JSONHelper.xcodeproj">
             </BuildableReference>
@@ -58,7 +58,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5F928D951C0D469F00EF50C4"
-            BuildableName = "JSONHelper-tvOS.framework"
+            BuildableName = "JSONHelper.framework"
             BlueprintName = "JSONHelper-tvOS"
             ReferencedContainer = "container:JSONHelper.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5F928D951C0D469F00EF50C4"
-            BuildableName = "JSONHelper-tvOS.framework"
+            BuildableName = "JSONHelper.framework"
             BlueprintName = "JSONHelper-tvOS"
             ReferencedContainer = "container:JSONHelper.xcodeproj">
          </BuildableReference>
@@ -98,7 +98,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5F928D951C0D469F00EF50C4"
-            BuildableName = "JSONHelper-tvOS.framework"
+            BuildableName = "JSONHelper.framework"
             BlueprintName = "JSONHelper-tvOS"
             ReferencedContainer = "container:JSONHelper.xcodeproj">
          </BuildableReference>

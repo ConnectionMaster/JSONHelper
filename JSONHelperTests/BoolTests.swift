@@ -13,8 +13,7 @@ import JSONHelper
 class BoolTests: XCTestCase {
   let testBool = true
   let testIntsAndResults = [(-1, false), (0, false), (1, true), (2, true)]
-  let testString = "true"
-  let testStringAlternative = "t"
+  let testStringsAndResults = [("true", true), ("t", true), ("false", false), ("f", false), ("yes", true), ("y", true), ("no", false), ("n", false)]
 
   func testBoolToBoolConversion() {
     var value: Bool?
@@ -32,13 +31,9 @@ class BoolTests: XCTestCase {
 
   func testStringToBoolConversion() {
     var value: Bool?
-    value <-- (testString as Any)
-    XCTAssertEqual(value, testBool, "String to Bool conversion failed")
-  }
-
-  func testAlternativeStringToBoolConversion() {
-    var value: Bool?
-    value <-- (testStringAlternative as Any)
-    XCTAssertEqual(value, testBool, "String to Bool conversion failed for alternative string representation")
+    for stringAndResult in testStringsAndResults {
+      value <-- (stringAndResult.0 as Any)
+      XCTAssertEqual(value, stringAndResult.1, "String to Bool conversion failed for value \(stringAndResult.0)")
+    }
   }
 }

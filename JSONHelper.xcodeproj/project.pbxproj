@@ -29,6 +29,18 @@
 		5F31FF691C533EAA00EF50C4 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1A4861B1CFFB500EF50C4 /* String.swift */; };
 		5F31FF6A1C533EAD00EF50C4 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1A4881B1D024500EF50C4 /* Int.swift */; };
 		5F31FF6C1C533F1600EF50C4 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF6B1C533F1600EF50C4 /* ColorTests.swift */; };
+		5F31FF6E1C5348F000EF50C4 /* NSDecimalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF6D1C5348F000EF50C4 /* NSDecimalNumber.swift */; };
+		5F31FF6F1C5348F000EF50C4 /* NSDecimalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF6D1C5348F000EF50C4 /* NSDecimalNumber.swift */; };
+		5F31FF701C5348F000EF50C4 /* NSDecimalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF6D1C5348F000EF50C4 /* NSDecimalNumber.swift */; };
+		5F31FF721C5348FE00EF50C4 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF711C5348FE00EF50C4 /* Double.swift */; };
+		5F31FF731C5348FE00EF50C4 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF711C5348FE00EF50C4 /* Double.swift */; };
+		5F31FF741C5348FE00EF50C4 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF711C5348FE00EF50C4 /* Double.swift */; };
+		5F31FF761C53490B00EF50C4 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF751C53490B00EF50C4 /* Float.swift */; };
+		5F31FF771C53490B00EF50C4 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF751C53490B00EF50C4 /* Float.swift */; };
+		5F31FF781C53490B00EF50C4 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF751C53490B00EF50C4 /* Float.swift */; };
+		5F31FF7A1C53496B00EF50C4 /* DoubleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF791C53496B00EF50C4 /* DoubleTests.swift */; };
+		5F31FF7C1C53497600EF50C4 /* FloatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF7B1C53497600EF50C4 /* FloatTests.swift */; };
+		5F31FF7E1C53499000EF50C4 /* NSDecimalNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31FF7D1C53499000EF50C4 /* NSDecimalNumberTests.swift */; };
 		5F928D991C0D469F00EF50C4 /* JSONHelper-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F928D981C0D469F00EF50C4 /* JSONHelper-tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FAD076A1A70F2FC00C4D09E /* JSONHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAD07691A70F2FC00C4D09E /* JSONHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FAD07701A70F2FC00C4D09E /* JSONHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAD07641A70F2FC00C4D09E /* JSONHelper.framework */; };
@@ -89,6 +101,12 @@
 		5F31FF5D1C533AE000EF50C4 /* Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapping.swift; sourceTree = "<group>"; };
 		5F31FF5F1C533E9900EF50C4 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Color.swift; path = Extensions/Color.swift; sourceTree = "<group>"; };
 		5F31FF6B1C533F1600EF50C4 /* ColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
+		5F31FF6D1C5348F000EF50C4 /* NSDecimalNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSDecimalNumber.swift; path = Extensions/NSDecimalNumber.swift; sourceTree = "<group>"; };
+		5F31FF711C5348FE00EF50C4 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Double.swift; path = Extensions/Double.swift; sourceTree = "<group>"; };
+		5F31FF751C53490B00EF50C4 /* Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Float.swift; path = Extensions/Float.swift; sourceTree = "<group>"; };
+		5F31FF791C53496B00EF50C4 /* DoubleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleTests.swift; sourceTree = "<group>"; };
+		5F31FF7B1C53497600EF50C4 /* FloatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatTests.swift; sourceTree = "<group>"; };
+		5F31FF7D1C53499000EF50C4 /* NSDecimalNumberTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDecimalNumberTests.swift; sourceTree = "<group>"; };
 		5F928D961C0D469F00EF50C4 /* JSONHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F928D981C0D469F00EF50C4 /* JSONHelper-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSONHelper-tvOS.h"; sourceTree = "<group>"; };
 		5F928D9A1C0D469F00EF50C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -250,10 +268,13 @@
 				5FAD07761A70F2FC00C4D09E /* JSONHelperTests.swift */,
 				5F024AE21B412BA900EF50C4 /* BoolTests.swift */,
 				5F31FF6B1C533F1600EF50C4 /* ColorTests.swift */,
+				5F31FF791C53496B00EF50C4 /* DoubleTests.swift */,
+				5F31FF7B1C53497600EF50C4 /* FloatTests.swift */,
 				5F024AE01B4127C900EF50C4 /* IntTests.swift */,
 				5F31FF551C5339B900EF50C4 /* NSDateTests.swift */,
 				5F31FF571C5339CE00EF50C4 /* NSURLTests.swift */,
 				5FB9D4DF1B38007C00EF50C4 /* StringTests.swift */,
+				5F31FF7D1C53499000EF50C4 /* NSDecimalNumberTests.swift */,
 			);
 			path = JSONHelperTests;
 			sourceTree = "<group>";
@@ -301,8 +322,11 @@
 			children = (
 				5FC1A48D1B1D057B00EF50C4 /* Bool.swift */,
 				5F31FF5F1C533E9900EF50C4 /* Color.swift */,
+				5F31FF711C5348FE00EF50C4 /* Double.swift */,
+				5F31FF751C53490B00EF50C4 /* Float.swift */,
 				5FC1A4881B1D024500EF50C4 /* Int.swift */,
 				5FC1A48F1B1D082500EF50C4 /* NSDate.swift */,
+				5F31FF6D1C5348F000EF50C4 /* NSDecimalNumber.swift */,
 				5FC1A4931B1D1D8B00EF50C4 /* NSURL.swift */,
 				5FC1A4861B1CFFB500EF50C4 /* String.swift */,
 			);
@@ -551,11 +575,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F31FF691C533EAA00EF50C4 /* String.swift in Sources */,
+				5F31FF701C5348F000EF50C4 /* NSDecimalNumber.swift in Sources */,
 				5F31FF641C533E9D00EF50C4 /* Mapping.swift in Sources */,
 				5F31FF681C533EA500EF50C4 /* JSONDataTypes.swift in Sources */,
 				5F31FF6A1C533EAD00EF50C4 /* Int.swift in Sources */,
 				5F31FF661C533EA100EF50C4 /* Conversion.swift in Sources */,
+				5F31FF781C53490B00EF50C4 /* Float.swift in Sources */,
 				5F133DA41C3840CA00EF50C4 /* JSONAPI.swift in Sources */,
+				5F31FF741C5348FE00EF50C4 /* Double.swift in Sources */,
 				5F31FF621C533E9900EF50C4 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,6 +592,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FC1A4941B1D1D8B00EF50C4 /* NSURL.swift in Sources */,
+				5F31FF6E1C5348F000EF50C4 /* NSDecimalNumber.swift in Sources */,
 				5FC1A4891B1D024500EF50C4 /* Int.swift in Sources */,
 				5FC1A48E1B1D057B00EF50C4 /* Bool.swift in Sources */,
 				5F31FF601C533E9900EF50C4 /* Color.swift in Sources */,
@@ -572,7 +600,9 @@
 				5F31FF5E1C533AE000EF50C4 /* Mapping.swift in Sources */,
 				5F133DA21C3840BB00EF50C4 /* JSONAPI.swift in Sources */,
 				5FC1A4901B1D082500EF50C4 /* NSDate.swift in Sources */,
+				5F31FF761C53490B00EF50C4 /* Float.swift in Sources */,
 				5F31FF5C1C533AD400EF50C4 /* Conversion.swift in Sources */,
+				5F31FF721C5348FE00EF50C4 /* Double.swift in Sources */,
 				5F1C55FC1C1AB25100EF50C4 /* JSONDataTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,9 +613,12 @@
 			files = (
 				5F024AE11B4127C900EF50C4 /* IntTests.swift in Sources */,
 				5F024AE31B412BA900EF50C4 /* BoolTests.swift in Sources */,
+				5F31FF7A1C53496B00EF50C4 /* DoubleTests.swift in Sources */,
+				5F31FF7E1C53499000EF50C4 /* NSDecimalNumberTests.swift in Sources */,
 				5F31FF581C5339CE00EF50C4 /* NSURLTests.swift in Sources */,
 				5FB9D4E01B38007C00EF50C4 /* StringTests.swift in Sources */,
 				5FAD07771A70F2FC00C4D09E /* JSONHelperTests.swift in Sources */,
+				5F31FF7C1C53497600EF50C4 /* FloatTests.swift in Sources */,
 				5F31FF6C1C533F1600EF50C4 /* ColorTests.swift in Sources */,
 				5F31FF561C5339B900EF50C4 /* NSDateTests.swift in Sources */,
 			);
@@ -613,6 +646,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FC1A4951B1D1D8B00EF50C4 /* NSURL.swift in Sources */,
+				5F31FF6F1C5348F000EF50C4 /* NSDecimalNumber.swift in Sources */,
 				5F31FF671C533EA400EF50C4 /* JSONDataTypes.swift in Sources */,
 				5FC1A48C1B1D036700EF50C4 /* Int.swift in Sources */,
 				5F31FF611C533E9900EF50C4 /* Color.swift in Sources */,
@@ -620,7 +654,9 @@
 				5FC1A4911B1D082B00EF50C4 /* Bool.swift in Sources */,
 				5F31FF631C533E9D00EF50C4 /* Mapping.swift in Sources */,
 				5F133DA31C3840C800EF50C4 /* JSONAPI.swift in Sources */,
+				5F31FF771C53490B00EF50C4 /* Float.swift in Sources */,
 				5FC1A48B1B1D036400EF50C4 /* String.swift in Sources */,
+				5F31FF731C5348FE00EF50C4 /* Double.swift in Sources */,
 				5FC1A4921B1D082D00EF50C4 /* NSDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
